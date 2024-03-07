@@ -1,0 +1,21 @@
+#titles {
+	text-shadow: 5px 4px #351E3F;
+	font-size: 80px;
+	color: red;
+}
+.brk {
+	height: 350px;
+}
+.note {
+	background-color: #fff740;
+	box-shadow: 9px 9px #351E3F;
+	width: 300px;
+	height: 300px;
+	padding: 5px;
+	margin: 2.5%;
+	float: left;
+}
+body {
+	background-image: url(bg_img.jpeg);
+	font-family: "Times New Roman";
+}
