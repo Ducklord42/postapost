@@ -48,4 +48,21 @@ function loadf()
 	//reader.readAsText(ff);
 }
 
+var url = 'https://ducklord42.github.io/postapost/gallery.json';
+
+fetch(url)
+  .then(function(response) {
+    response.text().then(function(text) {
+      dta = JSON.parse(text);
+      done();
+    });
+  });
+
+function done() {
+  for (i = 0; i != 2; i++)
+	{
+    		document.getElementById("p" + String(i)).innerHTML = dta[i];
+    	}
+}
+
 console.log("This works");
