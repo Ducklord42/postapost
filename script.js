@@ -20,15 +20,14 @@ function lst()
 	}
 }
 
-function savef()
+function post()
 {
-	const link = document.createElement("a");
-	const content = clicks + "\n" + cpc;
-	const file = new Blob([content], { type: 'text/plain' });
-	link.href = URL.createObjectURL(file);
-	link.download = "/Volumes/NO\ NAME/website/gallery.json";
-	link.click();
-	URL.revokeObjectURL(link.href);
+	const recipient = "website123a2@gmail.com";
+	const subject = "post";
+	const body = "hello world";
+	const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+	window.location.href = mailtoLink;
 }
 
 var url = 'https://ducklord42.github.io/postapost/gallery.json';
