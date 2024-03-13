@@ -25,7 +25,7 @@ function post() {
                 Host: "smtp.gmail.com",
                 Username: "website123a2@gmail.com",
                 Password: "web2348ite",
-                To: 'website123a2@gmail.com',
+                To: 'adr1999a2023@gmail.com',
                 From: "website123a2@gmail.com",
                 Subject: "post",
                 Body: "hello world",
