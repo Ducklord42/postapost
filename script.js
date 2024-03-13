@@ -9,7 +9,7 @@ function nxt()
 	{
 		document.getElementById("p" + String(i)).innerHTML = dta[i + postn];
 	}
-}	
+}
 
 function lst()
 {
@@ -20,14 +20,19 @@ function lst()
 	}
 }
 
-function post()
-{
-	const recipient = "website123a2@gmail.com";
-	const subject = "post";
-	const body = "hello world";
-	const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-	window.location.href = mailtoLink;
+function post() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "website123a2@gmail.com",
+                Password: "web2348ite",
+                To: 'website123a2@gmail.com',
+                From: "website123a2@gmail.com",
+                Subject: "post",
+                Body: "hello world",
+            })
+                .then(function (message) {
+                    alert("mail sent successfully")
+                });
 }
 
 var url = 'https://ducklord42.github.io/postapost/gallery.json';
