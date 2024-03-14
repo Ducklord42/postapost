@@ -20,20 +20,7 @@ function lst()
 	}
 }
 
-function post() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "website123a2@gmail.com",
-                Password: "web2348ite",
-                To: 'adr1999a2023@gmail.com',
-                From: "website123a2@gmail.com",
-                Subject: "post",
-                Body: "hello world",
-            })
-                .then(function (message) {
-                    alert("mail sent successfully")
-                });
-}
+function post() {console.log("This doesn't work yet");}
 
 var url = 'https://ducklord42.github.io/postapost/gallery.json';
 
